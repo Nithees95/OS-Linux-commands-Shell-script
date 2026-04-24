@@ -128,18 +128,18 @@ cat newfile | grep -i "hello"
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
+![catnewfile](./img/catnewfilegrepi.png)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![grep-rubuntu](./img/greprubuntu.png)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![grep-w-n](./img/grep-w-nworldnew.png)
 
 cat < newfile 
 ```
@@ -162,37 +162,37 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![egrep-w](./img/egrep-w.png)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+![egrep-wh|h](./img/egrep-w(H|h).png)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
+![egrepell[a-z]](./img/egrep-well[a-z].png)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
+![egrep(^hello)](./img/egrep'(hello).png)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![egrep(^world)](./img/egrep('world").png)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![egrep$(world)](./img/egreplinuxisbest.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![egrep05(world)](./img/egrep05(world).png)
 
 
 egrep '[1-9]' newfile 
