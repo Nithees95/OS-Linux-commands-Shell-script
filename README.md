@@ -122,7 +122,7 @@ grep -v hello newfile
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![catgrep-ifile](./img/cat-grep-ifile.png)
 
 
 
