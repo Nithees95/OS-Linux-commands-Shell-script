@@ -81,18 +81,18 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+![cut-c1-3file1](./img/01-cut-file11.png)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![01cut-dfile22](./img/cut-d%20file22.png)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![02cut-dfile22](./img/02cutdfile22.png)
 
 cat < newfile 
 ```
@@ -106,18 +106,18 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
+![grepHellofile](./img/grep%20Hello.png)
 
 
 grep hello newfile 
 ## OUTPUT
-
+![grephellofile](./img/grep%20hello.png)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![grep-vfile](./img/grep-vfilehello.png)
 
 
 cat newfile | grep -i "hello"
