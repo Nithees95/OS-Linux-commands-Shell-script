@@ -197,25 +197,25 @@ egrep '((W|w)orld$)' newfile
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![egrep[1-9]](./img/egrep[1-9].png)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![egrep'linux.*world](./img/egrep%20linuxworld*.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![egrep'linux.*world](./img/egrep%20linuxisbestintheworld*.png)
 
 egrep l{2} newfile
 ## OUTPUT
-
+![egrep l{2}](./img/egrepl{2}.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![egrep s{1,2}](./img/egrep%20s{1,2}.png)
 
 cat > file23
 ```
@@ -233,80 +233,80 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![sed-n-e](./img/sed-n-e.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![sed-efile23](./img/sed%20-efile23.png)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+![sed-eram/sita](./img/sed-e%20ramsita.png)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![sed-e2sramsita](./img/sed-e2sramsita.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
-
+![sedtom500](./img/sed%20toms500.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![sed-n-e1,5](./img/sed-n-e1,5file.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
+![sed-n-e2joe](./img/sed-n-eloep23.png)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![sed-n-etomjoe05](./img/sed-n-etomjoefile2305.png)
 
 
 seq 10 
 ## OUTPUT
-
+![seq10](./img/seq10.png)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![seq10-01](./img/seq10-01.png)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![seq10-02](./img/seq10-02.png)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+![seq10-03](./img/seq10-03.png)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![seq2sed](./img/seq10-04.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![seq10sed2](./img/seq10sed29c.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![sed-n2,4](./img/sed-n2,4{s50}.png)
 
 
 sed -n '2,4{s/$/*/;p}' file23
-
+## OUTPUT
+![sed-n2,4](./img/sed-n2,4*p{50}.png)
 
 #Sorting File content
 cat > file21
@@ -319,7 +319,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![sortfile1](./img/sortfile21.png)
 
 cat > file22
 ```
@@ -332,13 +332,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![catfile2](./img/catfile2222.png)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![catfile2333](./img/catfile233333.png)
 
 cat < urllist.txt
 ```
@@ -355,18 +356,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+![caturllist](./img/caturllist.png)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
+![caturllist](./img/caturllist01.png)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+![tar-cvfbackup](./img/tar-cvfbackup.png)
 
 mkdir backupdir
  
@@ -376,19 +377,21 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-
+![tartvfbackup](./img/tar-tvfbackup01.png)
 
 tar -xvf backup.tar
 ## OUTPUT
+![tarxvfbackup](./img/tar-xvfbackup.png)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+![ls.gz](./img/lsbackupdir01.png)
+
 gunzip backup.tar.gz
 ## OUTPUT
-
+![gunzip](./img/gunzip00.png)
  
 # Shell Script
 ```
@@ -398,7 +401,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![echobin](./img/echobinshop.png)
  
 cat << stop > herecheck.txt
 ```
@@ -410,7 +413,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![catherecheck](./img/catherecheck.png)
 
 cat < scriptest.sh 
 ```bash
@@ -448,24 +451,26 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
+![binssh00](./img/binssh000.png)
  
 ls file1
 ## OUTPUT
+![lsfile1](./img/lsfiiiiiiiiile01.png)
 
 echo $?
 ## OUTPUT 
+![echo](./img/echoooo001.png)
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+![echo02](./img/echo000002.png)
 abcd
  
 echo $?
  ## OUTPUT
-
+![echo](./img/echo000003.png)
 
  
 # mis-using string comparisons
@@ -497,24 +502,24 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
+![catstr](./img/catstrcomp.png)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![stecomp](./img/chmod.png)
 
 # check file ownership
-cat < psswdperm.sh 
+
 ```bash
 \#!/bin/bash
 if [ -O /etc/passwd ]
 then
 echo “You are the owner of the /etc/passwd file”
 else
-echo “Sorry, you are not the owner of the /etc/passwd file”
+echo “Sorry, you are not the owner of the /etc/pascat < psswdperm.sh swd file”
 fi
 ^d
 ```
@@ -531,6 +536,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![catpss](./img/catpsswd.png)
 
 # check if with file location
 cat>ifnested.sh 
@@ -577,7 +583,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![catifnested](./img/catifnested.png)
 
 
 # using numeric test comparisons
@@ -621,7 +627,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-
+![catiftest](./img/catiftest.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -670,7 +676,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-
+![catifnested](./img/catifnested000001.png)
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -698,7 +704,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![catelif](./img/catelifchecksh.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -714,6 +720,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![catifcompound](./img/catifcompoundsh.png)
 
 # using the case command
 cat >casecheck.sh 
