@@ -508,6 +508,7 @@ fi
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
+
 ## OUTPUT
 ![stecomp](./img/chmod.png)
 
@@ -535,6 +536,7 @@ echo “Sorry, you are not the owner of the /etc/passwd file”
 fi
  ```
 ./psswdperm.sh
+
 ## OUTPUT
 ![catpss](./img/catpsswd.png)
 
@@ -582,6 +584,7 @@ fi
 ```
 
 ./ifnested.sh 
+
 ## OUTPUT
 ![catifnested](./img/catifnested.png)
 
@@ -626,6 +629,7 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
+
 ##OUTPUT
 ![catiftest](./img/catiftest.png)
 # check if a file
@@ -675,6 +679,7 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
+
 ##OUTPUT
 ![catifnested](./img/catifnested000001.png)
 # looking for a possible value using elif
@@ -703,6 +708,7 @@ fi
 $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
+
 ## OUTPUT
 ![catelif](./img/catelifchecksh.png)
 
@@ -719,6 +725,7 @@ fi
 ```
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
+
 ## OUTPUT
 ![catifcompound](./img/catifcompoundsh.png)
 
@@ -740,6 +747,10 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+
+## output 
+![chmodorr](./img/chmod755whuletest.png)
+
  
 cat > whiletest
 ```bash
@@ -755,7 +766,10 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+
+## output
+
+![whiletest]() 
  
 cat untiltest.sh 
 ```bash
@@ -783,6 +797,8 @@ done
  
 $ chmod 755 forin1.sh
  
+## output
+![using](./img/usinguntilcommand.png)
  
 cat forin2.sh 
 ```bash
@@ -794,30 +810,9 @@ echo “word:$test”
 done
  ```
  
+
 $ chmod 755 forin2.sh
- 
-cat forin2.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
-```
-$ chmod 755 forin2.sh
- 
-$ ./forin2.sh 
- 
-cat forin3.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don\'t know if "this'll" work
-do
-echo "word:$test"
-done
-```
+
 $ ./forin3.sh 
  
 cat forin1.sh 
@@ -832,6 +827,8 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+![binbash](./img/binbash00000000000000000000000004.png)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -853,7 +850,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![read](./img/readingvalues056.png)
 
 cat forctype.sh 
 ```bash
@@ -866,7 +863,9 @@ done
 ````
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
+
 ## OUTPUT
+![we](./img/testingstyle.png)
 
 cat forctype1.sh 
 ```bash
@@ -879,8 +878,9 @@ done
 ```
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
-## OUTPUT
 
+## OUTPUT
+![echo](./img/cho0003.png)
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -897,8 +897,9 @@ done
 $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
- ## OUTPUT
 
+ ## OUTPUT
+![inside](./img/insideloopmik.png)
  
 cat forbreak.sh 
 ```bash
@@ -915,6 +916,7 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
+![iteration](./img/iteration2223.png)
 
 $ chmod 755 forbreak.sh
  
@@ -940,6 +942,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
+![iteration](./img/iteration%20.png)
  
 cat exread.sh 
 ```bash
@@ -954,6 +957,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![name](./img/enter.png)
 
 
  cat exread1.sh
@@ -966,7 +970,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-
+![enter](./img/enter.png)
 
 
 $ ./exread1.sh 
@@ -987,6 +991,7 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
+![commands](./img/linuxcommandsshell.png)
  ./funcex.sh 
 
  
@@ -1004,6 +1009,7 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
+![parrot](./img/nitheeshparrot.png)
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
@@ -1021,6 +1027,7 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
+![argshift](./img/storearguments0001.png)
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1034,6 +1041,7 @@ done
 set +x
 ```
 ## OUTPUT
+![setwhile](./img/setwhilebinbash.png)
  ./argshift.sh 1 2 3
  
  
@@ -1066,6 +1074,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
+![catdata](./img/catdata.png)
  
 cat > palindrome.sh
 ```bash
@@ -1093,7 +1102,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![palindrome](./img/palindrome.png)
 
 # RESULT:
 The Commands are executed successfully.
